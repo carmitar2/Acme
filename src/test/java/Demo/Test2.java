@@ -15,6 +15,7 @@ public class Test2
 {
     private static WebDriver driver;
     private String baseUrl;
+    //---------------------------
 
     @Before
     public void setUp()
