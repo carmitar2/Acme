@@ -39,6 +39,12 @@ public class Test2
         System.out.println("We are on the page " + link );
     }
 
+    @Test
+    public void second()
+    {
+        System.out.println("Test");
+    }
+
     @After
     public void tearDown() throws Exception
     {
