@@ -1,6 +1,7 @@
 package Demo;
 
 import org.junit.After;
+import org.junit.Assert;
 import org.junit.Before;
 import org.junit.Test;
 import org.openqa.selenium.By;
@@ -35,9 +36,8 @@ public class Test2
         driver.findElement(By.name("username")).sendKeys("student1");
         driver.findElement(By.name("userpass")).sendKeys("stpass1");
         driver.findElement(By.name("ses_login")).click();
-        String link = "http://www.acme.qualityhouse.bg/build3/index.php";
-        assertTrue (link,true);
-        System.out.println("We are on the page " + link );
+        String URL = driver.getCurrentUrl();
+        Assert.assertEquals("http://www.acme.qualityhouse.bg/build3/index.phpp", URL );
     }
 
     @Test
